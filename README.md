@@ -203,8 +203,21 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## 🎈 Usage <a name="usage"></a>
 
-Add notes about how to use the system.
+* `kind`: str
+	
+	Select one of the values: encrypt | decrypt | keygen.
 
+* `keypath`: str
+
+	Path of private or public key.
+
+* `area`: str
+
+	Directory path to infect.
+
+* `message`: str (default "hello")
+
+	Messages to be written to the infected file. 
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 

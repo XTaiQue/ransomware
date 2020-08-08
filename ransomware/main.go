@@ -19,16 +19,16 @@ var infected_message = ""
 
 func main() {
 
-	kind := flag.String("kind", "", "Please select one of the values: encrypt | decrypt | keygen")
-	keypath := flag.String("keypath", "", "Private Key path or Public Key path")
-	flag.StringVar(&area, "area", "", "Folder path to infect.")
+	kind := flag.String("kind", "", "Select one of the values: encrypt | decrypt | keygen.")
+	keypath := flag.String("keypath", "", "Path of private or public key.")
+	flag.StringVar(&area, "area", "", "Directory path to infect.")
 	flag.StringVar(&infected_message, "message", "hello", "Messages to be written to the infected file.")
 	
     flag.Parse()
 
 	if *kind == "encrypt" || *kind == "decrypt" {
 		if area == "" {
-			println("Input [area] parameter. Folder path to infect.")
+			println("Input [area] parameter. Directory path to infect.")
 			return
 		}
 

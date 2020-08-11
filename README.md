@@ -38,7 +38,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 #### install go language from [HERE.](https://golang.org/)
 
-### Tutorial
+### 🚀 Tutorial
 
 1. **Clone git with the command below.**
 
